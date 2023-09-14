@@ -1,4 +1,4 @@
-import { Button, Col, ListGroup, Row } from "react-bootstrap";
+import { Col, ListGroup, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const Favourites = () => {
@@ -10,9 +10,8 @@ const Favourites = () => {
           {favourites.length > 0 ? (
             favourites.map((job, i) => (
               <ListGroup.Item key={i}>
-                <Button variant="danger" onClick={() => {}}></Button>
                 <img
-                  className="book-cover-small"
+                  className="book-cover-small roundedCircle"
                   src="https://images.pexels.com/photos/4240587/pexels-photo-4240587.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="job selected"
                 />
