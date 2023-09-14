@@ -8,14 +8,9 @@ const Favourites = () => {
       <Col sm={12} className="mb-5">
         <ListGroup variant="flush">
           {favourites.length > 0 ? (
-            favourites.map((job, i) => (
+            favourites.map((data, i) => (
               <ListGroup.Item key={i}>
-                <img
-                  className="book-cover-small roundedCircle"
-                  src="https://images.pexels.com/photos/4240587/pexels-photo-4240587.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="job selected"
-                />
-                {job.title}
+                {data.company_name} - {data.title}
               </ListGroup.Item>
             ))
           ) : (
